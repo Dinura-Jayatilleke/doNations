@@ -1,0 +1,21 @@
+#outter
+{
+	
+	height:700px;
+	width:100%;
+	background-size:cover;
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.2)),url(donate1.jpg);
+}
+#h1
+{
+	font-size:100px;
+	background-color: none;
+	color: white;
+	font-family: arial;
+	text-align: center;
+}
+.tb
+{
+	height:20px;
+	width:1250px;
+}
