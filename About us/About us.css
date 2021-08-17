@@ -19,3 +19,38 @@
 	height:20px;
 	width:1250px;
 }
+.history
+{
+	width: 600px;
+	height: 100%;
+	margin:0px;
+}
+.cwvr2
+{
+	margin:0px;
+
+	font-size:25;
+	padding: 125px  0px 50px  100px ;
+}
+.laow
+{
+	background-color: white;
+	width: 190px; 
+	height: 50px; 
+	background-color: darkorange;
+	padding: 20px 10px 0px 10px; 
+	color: #003355;
+	border-radius: 50px;
+}
+.change:hover
+{
+	background-color: #003355;
+	color: darkorange;
+}
+.cwvr
+{ 
+	margin:0px;
+	color:black;
+	font-family: arial;
+	padding: 150px  150px  150px  190px ;
+}
