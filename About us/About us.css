@@ -80,4 +80,35 @@
 	color: white;
 	font-family: arial;
 }
-
+#wm
+{
+	background-image: url(impact.jpg);
+	height:800px;
+	width:1250px;
+	background-size:cover;
+}
+#impact
+{
+	padding-top: 390px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#im
+{
+	height: 300px;
+	width: 450px;
+	background-color:#003355;
+}
+#im1
+{
+	padding-left: 40px;
+	height: 46px;
+	width: 150px;
+	background-color:none;
+}
+.p4
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
