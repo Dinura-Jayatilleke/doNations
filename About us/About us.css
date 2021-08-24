@@ -54,3 +54,30 @@
 	font-family: arial;
 	padding: 150px  150px  150px  190px ;
 }
+.black
+{
+	background-color:#003355;
+	height: 550px;
+	width:1250px;
+}
+#mission
+{
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#h2
+{
+	font-size:65;
+	width: 270px;
+	background-color:#003355;
+	color: white;
+	font-family: arial;
+}
+.p3
+{
+	font-size:25;
+	color: white;
+	font-family: arial;
+}
+
