@@ -6,3 +6,18 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
   }
+/*-----------------------------------------------*/
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .content{
+    align-content: center;
+    overflow: hidden;
+  }
+  .content img{
+    width: 100%;
+  }
+/*-----------------------------------------------*/
