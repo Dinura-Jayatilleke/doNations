@@ -6,7 +6,19 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
   }
-/*-----------------------------------------------*/
+  /*---------------pararel scroll------------------*/
+  .parallax {
+    /*background color gradient*/
+    /*background-image: url("images/image1.png");*/
+    background: radial-gradient(white,cyan);
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/*--------------------header---------------------*/
 .row{
     display: flex;
     align-items: center;
