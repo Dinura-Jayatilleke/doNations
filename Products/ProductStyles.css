@@ -6,7 +6,7 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
   }
-  /*---------------pararel scroll------------------*/
+/*---------------pararel scroll------------------*/
   .parallax {
     /*background color gradient*/
     /*background-image: url("images/image1.png");*/
@@ -18,18 +18,18 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-/*--------------------header---------------------*/
+/*------------------image slide-------------------*/
 .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .content{
+.content{
     align-content: center;
     overflow: hidden;
   }
-  .content img{
+.content img{
     width: 100%;
   }
 /*-----------------h1-title----------------------*/
@@ -50,3 +50,4 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
