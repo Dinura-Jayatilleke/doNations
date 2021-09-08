@@ -188,5 +188,9 @@ h3{
 	position: relative;
 	overflow: hidden;
 }
+.disaster-col img{
+	width: 100%;
+	display: block;
+}
 
 
