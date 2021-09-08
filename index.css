@@ -181,5 +181,12 @@ h3{
 	text-align: center;
 	padding-top: 50px;
 }
+.disaster-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
 
 
