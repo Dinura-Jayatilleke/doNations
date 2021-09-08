@@ -151,5 +151,14 @@ p{
 	display: flex;
 	justify-content: space-between;
 }
+.how-col{
+	flex-basis: 31%;
+	background: #c0eef7;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
 
 
