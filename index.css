@@ -201,5 +201,7 @@ h3{
 	left: 0;
 	transition: 0.5s;
 }
-
+.layer:hover{
+	background: rgba(88, 208, 255, 0.7);
+}
 
