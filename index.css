@@ -91,3 +91,6 @@ nav img{
 	background: #54b4e0;
 	transition: 1s;
 }
+nav .fa{
+	display: none;
+}
