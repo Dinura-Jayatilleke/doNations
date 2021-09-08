@@ -160,5 +160,10 @@ p{
 	box-sizing: border-box;
 	transition: 0.5s;
 }
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
 
 
