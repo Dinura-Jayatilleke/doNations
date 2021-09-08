@@ -215,4 +215,8 @@ h3{
 	position: absolute;
 	transition: 00.5s;
 }
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
 
