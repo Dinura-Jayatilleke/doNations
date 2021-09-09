@@ -199,3 +199,36 @@
 	margin-top: 20px;
 	text-align: justify;
 }
+/*start of footer css*/
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+footer
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px;
+	background: #111;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+a
+{
+	color: #fff;
+	transition: all 0.3s ease;
+}
+a:hover
+{
+	color: darkorange;
+}
