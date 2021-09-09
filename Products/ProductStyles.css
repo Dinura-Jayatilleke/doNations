@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   align-items: center;
-  justify-content: center;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
@@ -21,8 +20,8 @@ background: radial-gradient(white,cyan);
   float: left;
   color: white;
   text-decoration: none;
-  /*display: block;*/
-  text-align: center;
+  display: block;
+  /*text-align: center;*/
   padding: 5px 15px;
   font-size: 17px; 
 }
@@ -37,11 +36,11 @@ background: radial-gradient(white,cyan);
   height: 2px;
   background: rgb(102, 207, 255);
   display: block;
-  margin: auto;
+  /*margin: auto;*/
   transition: 0.5s;
 }
 .topnav a:hover::after{
-  width: 100%;
+  width: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -66,8 +65,6 @@ background: radial-gradient(white,cyan);
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  /*.topnav.responsive .dropdown-content {position: relative;}*/
 }
 /*------------------image slide-------------------*/
 .row{
