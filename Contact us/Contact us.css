@@ -373,3 +373,11 @@ a:hover
 	}
 }
 /*footer mobile view*/
+@media (max-width: 800px)
+{
+	footer
+	{
+		font-size: 22px;
+		padding:40px;
+	}
+}
