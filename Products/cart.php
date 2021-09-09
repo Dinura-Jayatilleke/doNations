@@ -83,6 +83,21 @@
                 <td><?php echo number_format($value["product_quantity"]*$value["product_price"],2);?></td>
                 <td><a href="nav bar.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
             </tr>
+
+            <?php
+            $total = $total + ($value["product_quantity"]*$value["product_price"]);
+            }
+            ?>
+
+            <tr>
+                <td colspan="3" align="right">Total</td>
+                <td align="right"><?php echo number_format($total,2);?></td>
+                <td></td>
+            </tr>
+            
+            <?php
+            }
+            ?>
         </table>
     </div>     
 </body>
