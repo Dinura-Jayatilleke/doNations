@@ -297,3 +297,169 @@
 		margin-top: 80px;
 	}
 }
+
+/*Smaller to larger mobile phones*/
+@media only screen and (max-width: 480px){
+
+	.header h1{
+		font-size: 60px;
+	}
+
+	.upcoming-events{
+		height: 2200px;
+	}
+
+	.upcoming-events-heading h2{
+		font-size: 35px;
+		padding-bottom: 0px;
+	}
+
+	.new-events{
+		padding-top: 5px;
+	}
+
+	.span_1_of_2{
+		width: 49.0%; 
+	}
+
+	.new-event-img{
+		margin-top: 10px;
+	}
+
+	.new-event-img img{
+		margin-left: 25px;
+	}
+
+	.new-event-description{
+		font-size: 18px;
+		padding: 5px 1px;
+		margin-left: 120px;
+	}
+
+	.new-event-name{
+		padding-right: 0px;
+	}
+
+	.desc{
+		padding-right: 10px;
+		padding-left: 10px;	
+	}
+
+	.amount-need{
+		padding: 20px 5px;
+		margin: 10px 35px;
+		width: 70%;
+	}
+
+	.new-event-date{
+		padding: 0 20px;
+	}
+
+	.place{
+		padding: 0 20px;
+	}
+
+	.bottom-border{
+		margin-top: 650px;
+		width: 80%;
+	}
+
+	.events{
+		height: 2375px;
+	}
+
+	.events-heading h2{
+		padding-top: 58px;
+	}
+
+	.span_1_of_4{
+		width: 82%; 
+	}
+
+	.evt{
+		margin-bottom: 30px;
+	}
+
+	#evt1,#evt2,#evt3,#evt4{
+		margin-left: 35px;
+	}
+
+	.img-wrapper img{
+		height: 210px;
+	}
+
+	.comments{
+		height: 1810px;
+	}
+
+	.comments-heading{
+		font-size: 25px;
+		padding: 50px 30px;
+		line-height: 40px;
+	}
+
+	.span_1_of_3{
+		width: 100%;
+	}
+
+	.test-box{
+		height: 510px;
+		margin-bottom: 30px;
+	}
+
+	.com{
+		height: 270px;
+	}
+
+	.name{
+		font-size: 20px;
+	}
+
+	.getcomment-heading{
+		font-size: 18px;
+		padding: 35px 20px;
+		line-height: 30px;
+	}
+
+	#uname,#addcomment{
+		width: 400px;
+		height: 40px;
+		font-size: 16px;
+	}
+
+	.footer{
+		height: 1100px;
+	}
+
+	.column .our-details{
+		margin-bottom: 20px;
+	}
+
+	.column:nth-child(1){
+		padding-left: 40px;	
+	}
+
+	.column:nth-child(2){
+		flex-basis: 35%;
+		margin-left: 30px;
+		margin-top: 40px;
+	}
+
+	.column:nth-child(3){
+		flex-basis: 35%;
+		margin-right: 30px;
+		margin-top: 40px;
+	}
+
+	.column:nth-child(4){
+		flex-basis: 50%;
+		margin-top: 30px;
+		margin-left: 90px;
+	}
+
+	.column:nth-child(5){
+		flex-basis: 50%;
+		margin-left: 90px;
+		margin-top: 100px;
+	}
+}
