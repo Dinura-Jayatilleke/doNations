@@ -9,3 +9,27 @@ body{
 	text-align: center;
 }
 
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 0.5%;
+}
+
+/*-------- One row two columns --------------*/
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+
+/*-------- One row three columns --------------*/
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+/*-------- One row four columns --------------*/
+
+.span_1_of_4 {
+	width: 23.8%; 
+}
