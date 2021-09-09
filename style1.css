@@ -263,3 +263,37 @@ nav .fa{
 	padding: 50px 30px;
 	letter-spacing: 1px;
 }
+
+.test{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.test-box{
+	height: 460px;
+	background-color: #596468;
+	color: white;
+	border: 1px solid white;
+}
+
+.test-box img{
+	margin-top: 40px;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+}
+
+.com{
+	font-size: 16px;
+	font-family: arial;
+	line-height: 35px;
+	height: 230px;
+	text-align: center;
+	padding: 30px 30px 10px 30px;
+}
+
+.name{
+	margin: 40px 0 10px 0;
+	font-size: 18px;
+	font-weight: bold;
+}
