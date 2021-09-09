@@ -118,5 +118,24 @@ background: radial-gradient(white,cyan);
 .pro-con .product img{
    margin: 5px 5px 5px 5px;
    width: 290px;
+}
+/*--------------------Cart---------------------*/ 
+table,th,tr{
+  text-align: center;
+}
+.title2{
+  text-align: center;
+  color: #66afe9;
+  background-color: #efefef;
+  padding: 2%;
+}
+h2{
+  text-align: center;
+  color: #66afe9;
+  background-color: #efefef;
+  padding: 2%;
+}
+table th{
+  background-color: #efefef;
+}
 
-} 
