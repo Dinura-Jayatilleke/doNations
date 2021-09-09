@@ -388,4 +388,12 @@ a:hover
 	{
 		font-size: 18px;
 	}
+	.container
+	{
+		flex-direction: column;
+	}
+	.container2
+	{
+	  display: flex;
+	}
 }
