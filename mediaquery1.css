@@ -55,3 +55,90 @@
 		padding-top: 40px;
 	}
 }
+
+/*Smaller tablets to larger tablet screens*/
+@media only screen and (max-width: 1023px){
+	.new-event-img{
+		padding-top: 40px;
+	}
+
+	.new-event-img img{
+		width: 320px;
+	}
+
+	.amount-need{
+		margin: 10px 100px;
+	}
+
+	.bottom-border{
+		width: 85%;
+	}
+
+	.events{
+		height: 1410px;
+	}
+
+	.img-wrapper img{
+		height: 220px;
+	}
+
+	.events-heading{
+		font-size: 43px;
+		padding-top: 30px;
+		padding-bottom: 10px;
+	}
+
+	.span_1_of_4 {
+		width: 36%; 
+	}
+
+	#evt1{
+		margin-left: 110px;
+	}
+
+	#evt2,#evt4{
+		margin-left: 60px;
+	}
+
+	#evt3{
+		margin-left: 110px;
+	}
+
+	#evt3 .border-bar{
+		margin-top: 15px;
+	}
+
+	.comments{
+		height: 740px;
+	}
+
+	.comments-heading{
+		font-size: 30px;
+		padding: 50px 30px;
+	}
+
+	.test-box{
+		height: 550px;
+	}
+
+	.com{
+		font-size: 18px;
+		padding: 30px 15px 10px 15px;
+		height: 290px;
+	}
+
+	.name{
+		font-size: 18px;
+		padding-left: 5px;
+		line-height: 30px;
+	}
+
+	.getcomment-heading{
+		font-size: 20px;
+		padding-top: 60px;
+	}
+
+	.column:nth-child(5){
+		flex-basis: 20%;
+	}
+}
