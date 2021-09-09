@@ -259,3 +259,15 @@ a:hover
 	color: white;
 	background-color: black;
 }
+.Aboutus
+{
+	width: 40%;
+}
+.topic
+{
+	font-size: 22px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 16px;
+	position: relative;
+}
