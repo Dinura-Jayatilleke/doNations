@@ -382,3 +382,11 @@ a:hover
 }
 /*mobile view*/
 /*body mobile view*/
+@media (max-width: 900px)
+{
+	#pov
+	{
+	height: auto;	
+	width: 100%; 
+	background-size:cover;
+	}
