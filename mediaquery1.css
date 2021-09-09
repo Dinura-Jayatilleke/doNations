@@ -1,1 +1,35 @@
+/*Big tablets to smaller laptop screens*/ 
+@media only screen and (max-width: 1200px){
+	.header h1{
+		font-size: 80px;
+	}
 
+	.new-event-img{
+		margin-top: 40px;
+	}
+
+	.new-event-name{
+		line-height: 35px;
+	}
+
+	.amount-need{
+		padding: 20px 40px;
+		margin: 10px 125px;
+	}
+
+	.events{
+		height: 810px;
+	}
+
+	.img-wrapper img{
+		height: 220px;
+	}
+
+	.event-name-heading{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#evt3 .border-bar{
+		margin-top: 45px;
+	}
