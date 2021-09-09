@@ -92,6 +92,12 @@
 <h1 class="title">Products</h1>
 
 <div class="pcontainer">
+  <?php
+    $query = "select * from product order by id asc";
+    $result = mysqli_query($connection,$query);
+    if(mysqli_num_rows($result)>0){
+    while($row = mysqli_fetch_array($result)){
+    ?>
 
 </div>
 
