@@ -321,4 +321,9 @@ form input{
 	border: 0;
 	outline: none;
 }
-
+form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
