@@ -364,3 +364,8 @@ a:hover
 	text-decoration: none;
 	margin-bottom: 10px;
 }
+.ourpartners
+{
+	width: calc(35% - 200px);
+	margin-right: 0 !important;
+}
