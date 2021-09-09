@@ -284,3 +284,16 @@ a:hover
 {
 	padding-top: 18px;
 }
+.ourdetails
+{
+	position: relative;
+	width: 25%;
+}
+.ma
+{
+	line-height: 32px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
