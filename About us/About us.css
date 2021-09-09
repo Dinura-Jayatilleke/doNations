@@ -279,3 +279,25 @@ a:hover
 	border:2px solid white;
 	color: white;
 }
+#submit
+{
+	width: 150px; 
+	height: 50px; 
+	font-size: 20px;
+	color: black;
+	font-weight: bold;
+	background-color: #00d5ff;
+	border: 2px solid #00d5ff;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+#submit:hover
+{
+	background-color: black;
+	border:2px solid #03a5fc;
+	color: #03a5fc;
+}
