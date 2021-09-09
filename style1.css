@@ -418,3 +418,38 @@ nav .fa{
 	margin-top: 20px;
 	font-size: 17px;
 }
+
+#submit{
+	width: 80px; 
+	height: 40px; 
+	font-size: 14px;
+	color: black;
+	font-weight: bold;
+	background-color: #00d5ff;
+	border: 2px solid #00d5ff;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	outline: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.form:hover{
+	background-color: black;
+	border:2px solid white;
+	color: white;
+}
+
+#submit:hover
+{
+	background-color: black;
+	border:2px solid #03a5fc;
+	color: #03a5fc;
+}
+
+.media-iconsa{
+	font-size: 25px;
+	width: 20px;
+	padding: 0 6px;
+}
