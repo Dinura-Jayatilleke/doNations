@@ -232,3 +232,31 @@ a:hover
 {
 	color: darkorange;
 }
+.container
+	{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	}
+.blue
+{
+	width: 60%;
+	position: relative;
+}
+.sec1
+{
+	margin-right: 40px;
+	margin-top: 0px;
+}
+.sec
+{
+	margin-right: 0px;
+	margin-top: 30px;
+}
+.sec2
+{
+	margin-left: 0px;
+	margin-top: 40px;
+}
