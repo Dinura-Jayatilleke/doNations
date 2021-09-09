@@ -75,6 +75,14 @@
                 $total=0;
                 foreach($_SESSION["shopping_cart"] as $key => $value){
             ?>
+            
+            <tr>
+                <td><?php echo $value["product_name"];?></td>
+                <td><?php echo $value["product_quantity"];?></td>
+                <td><?php echo $value["product_price"];?></td>
+                <td><?php echo number_format($value["product_quantity"]*$value["product_price"],2);?></td>
+                <td><a href="nav bar.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
+            </tr>
         </table>
     </div>     
 </body>
