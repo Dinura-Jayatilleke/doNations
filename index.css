@@ -356,3 +356,6 @@ form button .fas{
 	footer{
 		bottom: unset;
 	}
+	.col{
+		flex-basis: 100%;
+	}
