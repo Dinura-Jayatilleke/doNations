@@ -298,3 +298,7 @@ ul li{
     list-style: none;
     margin-bottom: 12px;
 }
+ul li a{
+	text-decoration: none;
+	color: #fff;
+}
