@@ -60,6 +60,10 @@
 </head> 
 <body>
 
-    <h1 class="title">Cart</h1> 
+    <h1 class="title">Cart</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+        </table>
+    </div>     
 </body>
 </html>
