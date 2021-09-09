@@ -396,4 +396,12 @@ a:hover
 	{
 	  display: flex;
 	}
+	.container3
+	{
+	  display: flex;
+	}
+	.sec1 {
+    	display: inline-block;
+   	margin-bottom: 40px;
+	}
 }
