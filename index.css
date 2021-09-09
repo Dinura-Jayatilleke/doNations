@@ -239,3 +239,8 @@ h3{
 .news-col p{
 	padding: 0;
 }
+.news-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
