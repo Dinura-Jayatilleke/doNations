@@ -132,3 +132,36 @@
 	padding-left: 50px;
 	padding-right: 50px;
 }
+/*footer codes*/
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+footer
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px 100px;
+	background: #111;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+a
+{
+	color: #fff;
+	transition: all 0.3s ease;
+}
+a:hover
+{
+	color: darkorange;
+}
