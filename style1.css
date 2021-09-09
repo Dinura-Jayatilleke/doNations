@@ -297,3 +297,45 @@ nav .fa{
 	font-size: 18px;
 	font-weight: bold;
 }
+
+/*----------------Getting comments section-------------------------*/
+
+.getcomment{
+	background-color: lightgrey;
+	padding-bottom: 20px;
+}
+
+.getcomment-heading{
+	padding-top: 100px;
+	padding-bottom: 35px;
+	font-size: 20px;
+}
+
+.user-comment{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#uname,#addcomment{
+	width: 500px;
+	height: 50px;
+	font-size: 18px;
+	margin: 15px;
+}
+
+.info {
+	border-radius: 20px;
+  background-color: #2196F3;
+  border-color: #2196F3;
+  color: white;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.info:hover {
+  border-color: darkblue;
+  background: darkblue;
+  color: white;
+}
