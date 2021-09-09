@@ -63,6 +63,13 @@
     <h1 class="title">Cart</h1>
     <div class="table-responsive">
         <table class="table table-bordered">
+            <tr>
+                <th width="30%">Product Name</th>
+                <th width="10%">Quantity</th>
+                <th width="13%">Price Details</th>
+                <th width="10%">Total Price</th>
+                <th width="10%">Remove Item</th>
+            </tr>
         </table>
     </div>     
 </body>
