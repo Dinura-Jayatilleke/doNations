@@ -234,3 +234,28 @@ a:hover
 	border:2px solid #03a5fc;
 	color: #03a5fc;
 }
+.green
+{
+	margin-right: 0 !important;
+}
+.media-iconsa
+{
+	font-size:25px;
+	width: 45px; 
+	height: 45px; 
+	border: 2px solid #222222;
+	margin: 30px 5px 0 0;
+	display: inline-block;
+	text-align: center;
+	line-height: 43px;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	background-color: #00d5ff;
+	color: black;
+}
+.media-iconsa:hover
+{
+	border-color: #03a5fc;
+	color: white;
+	background-color: black;
+}
