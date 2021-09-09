@@ -95,3 +95,21 @@
 	color: #003355;
 	transition: all 0.4s ease;
 }
+.black
+{
+	background-color:#003355;
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#h2
+{
+	background-color:#003355;
+	color: white;
+}
+.p3
+{
+	color: white;
+	padding-top: 50px;
+	font-size:22px;
+}
