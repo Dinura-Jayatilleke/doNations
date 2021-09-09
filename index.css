@@ -310,4 +310,7 @@ form{
 	border-bottom: 1px solid #fff;
 	margin-bottom: 50px;
 }
-
+form .far{
+	font-size: 18px;
+	margin-right: 10px;
+}
