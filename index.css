@@ -289,3 +289,9 @@ footer{
     position: relative;
     text-align: justify; 
 }
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+
+}
