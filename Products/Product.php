@@ -97,7 +97,22 @@
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result)>0){
     while($row = mysqli_fetch_array($result)){
-    ?>
+  ?>
+  
+  <div class="pro-con">
+    <form method="post" action="nav bar.php?action=add&id=<?php echo $row["id"];?>">
+      <div class="product">
+        <img src="<?php echo $row["image"];?>" width="250px" height="auto" class="img-responsive">
+        <h5 class="text-info"><?php echo $row["name"];?></h5>
+        <h6><?php echo $row["description"];?></h6>
+        <h5 class="text-danger">Rs. <?php echo $row["price"];?>/=</h5>
+        <input type="text" name="quantity" class="form-control" value="1">
+        <input type="hidden" name="hidden_name" value="<?php echo $row["description"];?>">
+        <input type="hidden" name="hidden_price" value="<?php echo $row["price"];?>">
+        <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to cart">
+      </div>
+    </form>
+  </div>  
 
 </div>
 
