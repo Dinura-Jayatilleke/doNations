@@ -220,4 +220,9 @@ h3{
 	opacity: 1;
 }
 /*----------news feed----------*/
-
+.news{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
