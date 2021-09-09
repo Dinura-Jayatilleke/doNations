@@ -79,3 +79,43 @@
 	color: black;
 	padding:0px 0px 10px 10px;
 }
+#im
+{
+	height: 360px;
+	width: 450px;
+	background-color:#003355;
+}
+.p3
+{
+	font-size:25px;
+	color: white;
+	font-family: arial;
+	padding-top: 50px;
+}
+.p4
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.inside
+{
+	margin-top:30px;
+	margin-left:140px;
+	width: 190px;
+}
+.laow
+{
+	width: 250px; 
+	height: 50px; 
+	background-color: #00d5ff;
+	padding: 10px 20px 10px 20px; 
+	color: #003355;
+	border-radius: 50px;
+}
+.change:hover
+{
+	background-color:#039dfc ;
+	color: #003355;
+	transition: all 0.3s ease-in-out;
+}
