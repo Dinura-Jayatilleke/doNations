@@ -29,3 +29,25 @@
 	height:20px;
 	width:100%;
 }
+.container3
+{
+	display: inline-flex;
+}
+.history
+{
+	height: 350px;width:550px;
+}
+.history1
+{
+	margin:0px;
+	color:black;
+	padding: 200px  40px  210px  0px ;
+	font-size: 40px;
+	text-align: center;
+}
+.historypara
+{
+	font-size:25px;
+	padding: 125px  0px 140px  100px ;
+	text-align: center;
+}
