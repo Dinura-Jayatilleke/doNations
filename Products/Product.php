@@ -91,6 +91,10 @@
 <!-------------------------------------Products--------------------------------------> 
 <h1 class="title">Products</h1>
 
+<div class="pcontainer">
+
+</div>
+
 
 <script>
   //script for the header
