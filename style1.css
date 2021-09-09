@@ -193,3 +193,58 @@ nav .fa{
 	margin-left: 40px;
 	margin-right: 40px;
 }
+
+.evt{
+	border: 1px solid grey;
+	margin-bottom: 50px;
+	background-color: lightyellow;
+}
+
+.img-wrapper img{
+	width: 100%;
+	height: 240px;
+}
+
+.event-name{
+	padding-top: 30px;
+}
+
+.event-name-heading{
+	padding-bottom: 10px ;
+	line-height: 30px;
+}
+
+.event-name-heading h2{
+	font-size: 20px;
+}
+
+.border-bar{
+	width: 120px;
+	margin: 15px auto;
+	height: 1px;
+	background: #000;
+}
+
+.description{
+	font-size: 18px;
+	padding: 20px 20px 30px 20px;
+	line-height: 25px;
+}
+
+.amount-raised{
+   	font-size: 17px;
+   	line-height: 24px;
+}
+
+.raised{
+	font-family: arial;
+	float: left;
+	padding-right: 3px;
+	padding-left: 20px;
+}
+
+.supporters{
+	font-family: arial;
+	float: right;
+	padding-right: 20px;
+}
