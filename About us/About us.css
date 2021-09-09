@@ -47,3 +47,51 @@
 	padding-right: 360px;
 	background-color: lightgray;  display: flex;
 }
+.history
+{
+	height: 550px;width:550px;
+}
+.history1
+{ 
+	margin:0px;
+	color:black;
+	padding: 220px  40px  210px  100px ;
+	font-size: 50px;
+	text-align: center;
+}
+.history12
+{ 
+	margin:0px;
+	color:black;
+	padding: 220px  40px  210px  100px ;
+	font-size: 50px;
+	text-align: center;
+}
+.history2
+{
+	font-size:25px;
+	padding: 100px  100px 50px  0px ;
+}
+.history4
+{
+
+	font-size:25px;
+	padding: 125px  0px 140px  100px ;
+	text-align: center;
+}
+.laow
+{
+	width: 250px; 
+	height: 50px; 
+	background-color: #00d5ff;
+	padding: 6px 0px 0px 15px; 
+	margin:-100px -50px 50px -55px;
+	color: #003355;
+	border-radius: 50px;
+}
+.change:hover
+{
+	background-color:#03a5fc ;
+	color: #003355;
+	transition: all 0.4s ease;
+}
