@@ -294,3 +294,7 @@ footer{
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
 }
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
