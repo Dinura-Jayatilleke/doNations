@@ -158,3 +158,44 @@
 	font-size: 30px;
 
 }
+.profiles
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 100px;
+}
+.profile
+{
+	flex-basis: 260px;
+}
+.profile-img
+{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	cursor: pointer;
+	transition: 400ms;
+}
+.profile-img:hover
+{
+	filter: grayscale(0);
+}
+.user-name
+{
+	margin-top: 20px;
+	font-size: 25px;
+}
+.h5
+{
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	color: #003355;
+}
+.p2
+{
+	font-size: 16px;
+	margin-top: 20px;
+	text-align: justify;
+}
