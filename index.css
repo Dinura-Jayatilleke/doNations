@@ -283,3 +283,9 @@ footer{
     position: relative;
     margin-bottom: 20px;
 }
+.col p{
+    margin-bottom: 40px;
+    width: fit-content;
+    position: relative;
+    text-align: justify; 
+}
