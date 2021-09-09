@@ -327,4 +327,8 @@ form button{
 	outline: none;
 	cursor: pointer;
 }
+form button .fas{
+	font-size: 16px;
+	color: #ccc;  
 
+}
