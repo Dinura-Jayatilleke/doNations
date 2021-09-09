@@ -248,3 +248,18 @@ nav .fa{
 	float: right;
 	padding-right: 20px;
 }
+
+/*----------------Comments section-------------------------*/
+
+.comments{
+	background-color: lightgrey;
+	width: 100%;
+	height: 615px;
+}
+
+.comments-heading{
+	font-size: 30px;
+	color: black;
+	padding: 50px 30px;
+	letter-spacing: 1px;
+}
