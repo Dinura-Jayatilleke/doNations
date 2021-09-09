@@ -423,4 +423,10 @@ a:hover
     	margin-right: 0px;
    		margin-bottom: 40px;
 	}
+	.blue {
+    	width: 100%;
+	}
+	.green {
+    	width: 100%;
+	}
 }
