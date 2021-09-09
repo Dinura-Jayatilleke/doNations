@@ -113,3 +113,36 @@
 	padding-top: 50px;
 	font-size:22px;
 }
+#wm
+{
+	background-image: url(aboutus-img/impact.jpg);
+	height:auto;
+	width: 100%;
+	background-size:cover;
+}
+#impact
+{
+	padding-top: 390px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+}
+#im
+{
+	height: 300px;
+	width: 480px;
+	background-color:#003355;
+}
+#im1
+{
+	padding-left: 40px;
+	height: 46px;
+	width: 150px;
+	background-color:none;
+}
+.p4
+{
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
