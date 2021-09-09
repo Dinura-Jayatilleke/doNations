@@ -380,4 +380,12 @@ a:hover
 		font-size: 22px;
 		padding:40px;
 	}
+	.topic
+	{
+		font-size: 32px;
+	}
+	.bottom
+	{
+		font-size: 18px;
+	}
 }
