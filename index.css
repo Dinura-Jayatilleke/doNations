@@ -359,3 +359,6 @@ form button .fas{
 	.col{
 		flex-basis: 100%;
 	}
+	.col:nth-child(2),.col:nth-child(3),.col:nth-child(4){
+		flex-basis: 100%;
+	}
