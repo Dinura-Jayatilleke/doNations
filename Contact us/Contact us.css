@@ -51,3 +51,31 @@
 	padding: 125px  0px 140px  100px ;
 	text-align: center;
 }
+#pov
+{
+	background-image: url("contactus-img/pov.jpg"); 
+	height: 100%; 
+	width: 100%; 
+	background-size:cover;
+}
+#impact
+{
+	padding-top: 390px;
+	padding-left: 750px;
+	padding-right: 50px;
+}
+#im1
+{
+	padding-left: 40px;
+	height: 46px;
+	width: 150px;
+	background-color:none;
+}
+#h2
+{
+	font-size: 27px;
+	width:380px;
+	background-color: white;
+	color: black;
+	padding:0px 0px 10px 10px;
+}
