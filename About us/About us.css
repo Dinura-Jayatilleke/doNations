@@ -467,4 +467,18 @@ a:hover
 	{
 	  display: flex;
 	}
-	
+	.sec1 {
+    		display: inline-block;
+   		margin-bottom: 40px;
+	}
+	.s
+	{
+		margin-right: 0px;
+   		margin-bottom: 40px;
+   		margin-top: 20px;
+	}
+	.em
+	{
+		margin-right: 0px;
+   		margin-bottom: 40px;
+	}
