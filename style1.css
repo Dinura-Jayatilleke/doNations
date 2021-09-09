@@ -97,3 +97,79 @@ nav img{
 nav .fa{
 	display: none;
 }
+
+/*----------------New Events section-------------------------*/
+
+.upcoming-events{
+	height: 1450px;
+}
+
+.upcoming-events-heading h2{
+	font-size: 45px;
+	color: black;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	letter-spacing: 1px;
+}
+
+.new-events{
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.new-event-img{
+	padding-left: 70px;
+	margin-top: 50px;
+}
+
+.new-event-img img{
+	width: 400px;
+	height: auto;
+	border-radius: 20%;
+}
+
+.new-event-description{
+	font-size: 18px;
+	padding: 5px 20px;
+	margin-top: 20px;
+}
+
+.new-event-name{
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding-right: 80px;
+	line-height: 35px;
+}
+
+.desc{
+	padding-right: 80px;	
+}
+
+.amount-need{
+	padding: 20px 70px;
+	margin: 10px 145px;
+	width: 40%;
+	font-size: 20px;
+	color: white;
+	background-color: deepskyblue;
+}
+
+.new-event-date{
+	line-height: 30px;
+	padding-right: 80px;
+}
+
+.place{
+	line-height: 30px;
+	padding-right: 80px;
+}
+
+.bottom-border{
+	width: 90%;
+	height: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	margin-top: 350px
+}
