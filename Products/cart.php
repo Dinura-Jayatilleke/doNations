@@ -70,6 +70,11 @@
                 <th width="10%">Total Price</th>
                 <th width="10%">Remove Item</th>
             </tr>
+            <?php
+                if(!empty($_SESSION["shopping_cart"])){
+                $total=0;
+                foreach($_SESSION["shopping_cart"] as $key => $value){
+            ?>
         </table>
     </div>     
 </body>
