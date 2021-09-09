@@ -314,4 +314,11 @@ form .far{
 	font-size: 18px;
 	margin-right: 10px;
 }
+form input{
+	width: 100%;
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
 
+}
