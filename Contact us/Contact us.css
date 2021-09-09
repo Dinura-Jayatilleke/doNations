@@ -313,4 +313,26 @@ a:hover
 {
 	color: darkorange;
 }
-
+/*mobile view*/
+/*body mobile view*/
+@media (max-width: 900px)
+{
+	#pov
+	{
+	height: auto;	
+	width: 100%; 
+	background-size:cover;
+	}
+	#impact
+	{	
+	padding-left: 50px;
+	padding-right: 250px;
+	}
+	#im1
+	{
+	padding-left: 20px;
+	height: 46px;
+	width: 150px;
+	background-color:none;
+	}
+}
