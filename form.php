@@ -22,3 +22,10 @@
 			else{
 				echo "Form not submitted";
 			}
+		
+		}
+		else{
+			echo "All fields are required";
+		}
+		
+	}
