@@ -335,4 +335,31 @@ a:hover
 	width: 150px;
 	background-color:none;
 	}
+	#h2
+	{
+	font-size: 25px;
+	width:350px;
+	background-color: white;
+	color: black;
+	padding:10px 0px 10px 10px;
+	}
+	#im
+	{
+	height: 260px;
+	width: 400px;
+	background-color:#003355;
+	}
+	.p3
+	{
+	font-size:20px;
+	color: white;
+	font-family: arial;
+	padding-top: 25px;
+	}
+	.inside
+	{
+		margin-top:30px;
+		margin-left:110px;
+		width: 190px;
+	}
 }
