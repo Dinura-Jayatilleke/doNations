@@ -245,3 +245,13 @@ h3{
 	text-align: left;
 }
 /*-------------------Footer------------------*/
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: black;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
