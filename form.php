@@ -31,4 +31,5 @@
 	}
 
 	mysqli_close($con);
+
 ?>
