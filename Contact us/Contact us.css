@@ -119,3 +119,16 @@
 	color: #003355;
 	transition: all 0.3s ease-in-out;
 }
+#sb
+{
+	background-image: url("contactus-img/sb.jpg"); 
+	height: 100%; 
+	width: 100%; 
+	background-size:cover;
+}
+#impact2
+{
+	padding-top: 390px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
