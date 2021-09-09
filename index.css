@@ -353,3 +353,6 @@ form button .fas{
 	text-align: center;
 }
 @media (max-width:700px){
+	footer{
+		bottom: unset;
+	}
