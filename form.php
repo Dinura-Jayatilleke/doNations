@@ -12,3 +12,6 @@
 
 			$name = $_POST['uname'];
 			$comment = $_POST['addcomment'];
+
+			$query = "INSERT INTO usercomments(name,comment) VALUES ('$name','$comment')";
+			$run = mysqli_query($con,$query) or die(mysqli_error());
