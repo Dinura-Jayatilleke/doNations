@@ -33,3 +33,25 @@
 	#evt3 .border-bar{
 		margin-top: 45px;
 	}
+
+    .comments{
+		height: 680px;
+	}
+
+	.comments-heading{
+		padding: 50px 30px;
+	}
+
+	.test-box{
+		height: 460px;
+	}
+
+	.com{
+		padding: 30px 15px 10px 15px;
+	}
+
+	.getcomment-heading{
+		font-size: 21px;
+		padding-top: 40px;
+	}
+}
