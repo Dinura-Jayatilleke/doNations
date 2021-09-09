@@ -1,110 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-<title>Products</title>
-<!--css file-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--css files-->
 <link rel="stylesheet" type="text/css" href="ProductStyles.css">
-<link rel="stylesheet" type="text/css" href="Header.css">
 
-<!--font style-->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 
 <!--bootstrap-->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<!--header-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/9ba1f57a06.js" crossorigin="anonymous"></script>
+<!--font style-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<title>Shopping Cart</title>
 <style>
- .mySlides {display:none;}   
+.mySlides {
+  display:none;
+}
 </style>
 </head>
 <body>
-<!--------------------------------------header--------------------------------------->
-<section class="header">
-  <nav>
-    <!--<a href="index.html"><img src="Images\HeaderImages\logo.png" ></a>-->
-    <div class="nav-links" Id="navLinks"> 
-    <i class="fa fa-times" onclick="hideMenu()"></i>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Products</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Achievments</a></li>
-      <li><a href="">Donors</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-      <li><a href="">Donate</a></li>
-    </ul>
-    </div>
-    <i class="fa  fa-bars"  onclick="showMenu()"></i>
-   </nav>
-</section>      
 
-<div class="parallax">
-<!------------------------------------Image slide------------------------------------>
-<div class="row">
-    <div class="content">
-        <img class="mySlides" src="Images\HeaderImages\image1.jpg">
-        <img class="mySlides" src="Images\HeaderImages\image2.jpg">
-        <img class="mySlides" src="Images\HeaderImages\image3.jpg">
-        <img class="mySlides" src="Images\HeaderImages\image4.jpg">
-        <img class="mySlides" src="Images\HeaderImages\image5.jpg">
-    </div>
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#">Products</a>
+  <a href="#">Events</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="cart.php">Cart</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-<hr>
-<!------------------------------------CATEGORIES------------------------------------->
-<h1 class="title">Categories</h1>
-<!--------------------------------FEATURED PRODUCTS---------------------------------->
-<h1 class="title">Featured Products</h1>
-<!---------------------------------LATEST PRODUCTS----------------------------------->       
-<h1 class="title">Latest Products</h1>
-<!-----------------------------------BEST SELLERS------------------------------------> 
-<h1 class="title">Best sellers</h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-----------------------------------Image slide------------------------------------->
+<div class="content">
+  <img class="mySlides" src="Images\HeaderImages\image1.jpg">
+  <img class="mySlides" src="Images\HeaderImages\image2.jpg">
+  <img class="mySlides" src="Images\HeaderImages\image3.jpg">
+  <img class="mySlides" src="Images\HeaderImages\image4.jpg">
+  <img class="mySlides" src="Images\HeaderImages\image5.jpg">
 </div>
+<!-------------------------------------Products--------------------------------------> 
+<h1 class="title">Products</h1>
+
+
 <script>
-//script for the header
-var navLinks = document.getElementById("navLinks");
-function showMenu() {
-  navLinks.style.right = "0";
- }
-function hideMenu(){
-  navLinks.style.right="-200px";
+  //script for the header
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
-
 <script>
-//script for the image slide
- var myIndex = 0;
-carousel();
+  //script for the image slide
+  var myIndex = 0;
+  carousel();
 
-function carousel() {
+  function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
@@ -116,5 +74,6 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }   
 </script>
+
 </body>
 </html>
