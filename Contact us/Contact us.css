@@ -1,1 +1,31 @@
+/*body css codes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+	text-decoration: none;
 
+}
+#outter
+{
+	
+	height:700px;
+	width:100%;
+	background-size:cover;
+	background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.2)),url("contactus-img/contact us.jpg");
+}
+#h1
+{
+	font-size:100px;
+	
+	background-color: none;
+	color: white;
+	text-align: center;
+}
+.tb
+{
+	height:20px;
+	width:100%;
+}
