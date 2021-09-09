@@ -15,3 +15,10 @@
 
 			$query = "INSERT INTO usercomments(name,comment) VALUES ('$name','$comment')";
 			$run = mysqli_query($con,$query) or die(mysqli_error());
+			
+			if($run){
+				echo "Form submitted successfully";
+			}
+			else{
+				echo "Form not submitted";
+			}
