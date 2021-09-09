@@ -363,3 +363,12 @@ a:hover
 		width: 190px;
 	}
 }
+@media (max-width: 900px)
+{
+	#sb
+	{
+	height: auto;	
+	width: 100%; 
+	background-size:cover;
+	}
+}
