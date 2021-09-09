@@ -1,3 +1,12 @@
+/*body css codes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+	text-decoration: none;
+}
 #outter
 {
 	
@@ -17,98 +26,24 @@
 .tb
 {
 	height:20px;
-	width:1250px;
+	width:100%;
 }
-.history
+.container1
 {
-	width: 600px;
-	height: 100%;
-	margin:0px;
-}
-.cwvr2
-{
-	margin:0px;
-
-	font-size:25;
-	padding: 125px  0px 50px  100px ;
-}
-.laow
-{
-	background-color: white;
-	width: 190px; 
-	height: 50px; 
-	background-color: darkorange;
-	padding: 20px 10px 0px 10px; 
+	margin:20px 40px;
 	color: #003355;
-	border-radius: 50px;
 }
-.change:hover
+.container2
 {
-	background-color: #003355;
-	color: darkorange;
+	  display: flex;
 }
-.cwvr
-{ 
-	margin:0px;
-	color:black;
-	font-family: arial;
-	padding: 150px  150px  150px  190px ;
-}
-.black
+.container3
 {
-	background-color:#003355;
-	height: 550px;
-	width:1250px;
+	  display: flex;
 }
-#mission
+.container4
 {
-	padding-top: 100px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-#h2
-{
-	font-size:65;
-	width: 270px;
-	background-color:#003355;
-	color: white;
-	font-family: arial;
-}
-.p3
-{
-	font-size:25;
-	color: white;
-	font-family: arial;
-}
-#wm
-{
-	background-image: url(impact.jpg);
-	height:800px;
-	width:1250px;
-	background-size:cover;
-}
-#impact
-{
-	padding-top: 390px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-#im
-{
-	height: 300px;
-	width: 450px;
-	background-color:#003355;
-}
-#im1
-{
-	padding-left: 40px;
-	height: 46px;
-	width: 150px;
-	background-color:none;
-}
-.p4
-{
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 355px;
+	padding-right: 360px;
+	background-color: lightgray;  display: flex;
 }
