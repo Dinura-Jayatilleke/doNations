@@ -274,4 +274,8 @@ footer{
 	width: 100px;
 	margin-bottom: 30px; 
  }
- 
+ .col h2{
+    width: fit-content;
+    
+    position: relative; 
+}
