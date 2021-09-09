@@ -232,3 +232,8 @@ h3{
 	margin-bottom: 5%;
 	text-align: left;
 }
+.news-col img{
+	width: 100%;
+	border-radius: 10px;
+
+}
