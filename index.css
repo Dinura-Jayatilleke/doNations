@@ -278,3 +278,8 @@ footer{
     width: fit-content;
     position: relative; 
 }
+.col h3{
+    width: fit-content;
+    position: relative;
+    margin-bottom: 20px;
+}
