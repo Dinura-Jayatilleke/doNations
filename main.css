@@ -179,4 +179,35 @@ nav .fa{
     width:100%;
     border-radius:10px;
 }
-
+/*--------------donation--------------- */
+.button{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+    margin-top: 50px;
+}
+.button .container{
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    margin-right:250px;  
+}
+.button .container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 150px;
+}
+.button .conteiner .title::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 3px;
+    width:30px;
+    background: linear-gradient(135deg,)#71b7e6,#9b59b6;
+}
