@@ -31,7 +31,7 @@ CREATE TABLE `usercomments` (
   `user_ID` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `comment` varchar(200) NOT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `usercomments`
