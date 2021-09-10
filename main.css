@@ -324,3 +324,70 @@ form .button1 input:hover{
     .user-details::-webkit-scrollbar{
     width: 0; } 
 }
+/*============donor Section=======*/
+.donhead{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 400px;
+    color: rgb(0, 0, 0);
+    margin-block-start: 50px;
+    font-size: 25px;
+    background: linear-gradient(135deg,#3d8eda,#f3d1d1);  
+} 
+.donor{
+	width: 80%;
+	text-align: center;
+	padding-top: 50px;
+    
+    font-size: 70px;
+    margin-block-start: 50px;
+   
+}
+.para{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-block-start: 50px;
+    margin-right: 400px;
+    color: rgb(165, 42, 42);
+    font-size: 20px;
+}
+.donor-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+    margin-block-start: 30px;
+    margin-left:200px ;
+}
+.donor-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height:70px ;
+	width: 320px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(44, 177, 104, 0.7);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	font-size: 24px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	transition: 00.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+} 
