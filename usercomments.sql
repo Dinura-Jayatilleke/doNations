@@ -37,7 +37,7 @@ CREATE TABLE `usercomments` (
 -- Dumping data for table `usercomments`
 --
 
-INSERT INTO `usercomments` (`user_ID`, `name`, `comment`) VALUES
+INSERT INTO `usercomments` (`user_ID`, `name`, `comment`)VALUES
 (1, 'Thisumi Samarasekara', 'Well done');
 
 --
