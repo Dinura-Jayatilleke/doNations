@@ -283,3 +283,26 @@ form .amount-details .category{
 form input[type="radio"]{
     display:none;
 }
+.button1{
+    height: 60px;
+    margin: 45px 0;
+    
+
+
+}
+form .button1 input{  
+    height: 100%;
+    width:100%;
+    outline:none;
+    color:#fff;
+    border:none; 
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing:1px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+form .button1 input:hover{
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
