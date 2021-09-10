@@ -306,3 +306,21 @@ form .button1 input{
 form .button1 input:hover{
     background: linear-gradient(135deg,#71b7e6,#9b59b6);
 }
+@media (max-width :584px){
+    .container{
+        max-width:100%;
+    }
+    form .user-details .input-box{
+        margin: 20px 0 12px 0 ;
+        width: 100%;
+    }
+    form .amount-details .category{
+    width: 100%;
+    }
+    .button .container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+    width: 0; } 
+}
