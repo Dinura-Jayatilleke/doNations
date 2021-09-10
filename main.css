@@ -118,3 +118,65 @@ nav .fa{
     padding: 10px;
     background:linear-gradient(135deg,#268ac4,#000000);
 }
+.container{
+    margin-left: 250px;
+    margin-top: 5px;
+}
+.story-box{
+    padding:10px;
+    background:#f3afa0;
+    margin-bottom:5px;
+    position:relative;
+    
+}
+.story-icon{
+    width:90px;
+    height:90px;
+    text-align:center;
+    line-height: 90px;
+}
+.story-icon i{
+    font-size:50px;
+    color:#fff;
+    mix-blend-mode: difference;
+}
+
+.story-box h2{
+    font-size:24px;
+    font-weight:bold;
+    color:#fff;
+    mix-blend-mode: difference;
+}
+.story-box p{
+    font-size: 16px;
+    font-weight:light;
+    color:#fff;
+    mix-blend-mode: difference;
+}
+
+.overlay{
+    margin:20px auto;
+    border:none;
+    padding:10px 44px;
+    font-size:20px;
+    position:relative;
+    display:inline-block;
+}
+.overlay:before{
+    transition:all 0.85s cubic-bezier(0.68,-0.55,0.265,1.55);
+    content:'';
+    width:50%;
+    height: 100%;
+    background: #15748a;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius:10px 0px 0px 10px;
+    
+}
+.overlay:hover:before{
+    background:#18758a;
+    width:100%;
+    border-radius:10px;
+}
+
