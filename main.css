@@ -62,4 +62,36 @@ nav img{
 nav .fa{
 	display: none;
 }
+/*--------Mobile View------------*/
+@media(max-width: 584px){
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: #54b4e0;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200PX;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		color: #fff;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30PX;
+
+
+	}
+	nav img{
+		width: 100px;
+	}
+}	
 
