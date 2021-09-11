@@ -7,7 +7,7 @@
 .header{
 	/*min-height: 50vh;*/
 	width: 100%;
-	background-image: linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.2)),url("contact us.jpg");
+	background-image: linear-gradient(to right,rgba(0,0,0,.7),rgba(0,0,0,.2)),url("contactus-img/contactus.jpg");
 	background-position: center;
 	background-size: cover;
 	text-align: center;
