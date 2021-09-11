@@ -1,7 +1,6 @@
 <?php
   session_start();
-  $db_name = "donations";
-  $connection = mysqli_connect("localhost","root","",$db_name);
+  include_once 'connection.php';
 
   if(isset($_POST["add"])){
     if(isset($_SESSION["shopping_cart"])){
@@ -94,13 +93,13 @@
 <div class="pcontainer">
   <?php
     $query = "select * from product order by id asc";
-    $result = mysqli_query($connection,$query);
+    $result = mysqli_query($con,$query);
     if(mysqli_num_rows($result)>0){
     while($row = mysqli_fetch_array($result)){
   ?>
   
   <div class="pro-con">
-    <form method="post" action="nav bar.php?action=add&id=<?php echo $row["id"];?>">
+    <form method="post" action="Product.php?action=add&id=<?php echo $row["id"];?>">
       <div class="product">
         <img src="<?php echo $row["image"];?>" width="250px" height="auto" class="img-responsive">
         <h5 class="text-info"><?php echo $row["name"];?></h5>
