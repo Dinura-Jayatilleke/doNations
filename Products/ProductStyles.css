@@ -6,14 +6,12 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-body{
-background: radial-gradient(white,cyan);
-}
 /*---------------------header---------------------*/
 .topnav {
   overflow: hidden;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .topnav a {
@@ -60,6 +58,9 @@ background: radial-gradient(white,cyan);
     right: 0;
     top: 0;
   }
+  .topnav {
+    background-color: black;
+  }
   .topnav.responsive a {
     float: none;
     display: block;
@@ -103,21 +104,22 @@ background: radial-gradient(white,cyan);
 /*------------------Products-------------------*/
 .pro-con{
   display: flex;
-  flex-wrap: wrap;
-
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+  flex-basis: 25%;
 }
 .product{
     border: 10px solid #eaeaec;
     margin: 10px 10px 10px 10px;
-    padding: 10px;
     text-align: center;
     background-color: #efefef;
-    align-content: center;
+    width: 340px;
+    padding: 10px;
   }
 
 .pro-con .product img{
    margin: 5px 5px 5px 5px;
-   width: 290px;
+   /*width: 290px;*/
 }
 /*--------------------Cart---------------------*/ 
 table,th,tr{
