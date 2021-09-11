@@ -48,7 +48,7 @@ INSERT INTO `usercomments` (`user_ID`, `name`, `comment`) VALUES
 -- Indexes for table `usercomments`
 --
 ALTER TABLE `usercomments`
- ADD PRIMARY KEY (`user_ID`);
+  ADD PRIMARY KEY (`user_ID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
