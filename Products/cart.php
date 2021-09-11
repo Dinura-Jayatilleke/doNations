@@ -1,7 +1,6 @@
 <?php
   session_start();
-  $db_name = "donations";
-  $connection = mysqli_connect("localhost","root","",$db_name);
+  include_once 'connection.php';
   
   if(isset($_POST["add"])){
     if(isset($_SESSION["shopping_cart"])){
@@ -61,14 +60,14 @@
 <body>
 
     <h1 class="title">Cart</h1>
-    <div class="table-responsive">
+    <div class="table-responsive" width="65%">
         <table class="table table-bordered">
             <tr>
-                <th width="30%">Product Name</th>
-                <th width="10%">Quantity</th>
-                <th width="13%">Price Details</th>
-                <th width="10%">Total Price</th>
-                <th width="10%">Remove Item</th>
+                <th width="50%">Product Name</th>
+                <th width="5%">Quantity</th>
+                <th width="15%">Price Details</th>
+                <th width="15%">Total Price</th>
+                <th width="15%">Remove Item</th>
             </tr>
             <?php
                 if(!empty($_SESSION["shopping_cart"])){
@@ -80,8 +79,8 @@
                 <td><?php echo $value["product_name"];?></td>
                 <td><?php echo $value["product_quantity"];?></td>
                 <td><?php echo $value["product_price"];?></td>
-                <td><?php echo number_format($value["product_quantity"]*$value["product_price"],2);?></td>
-                <td><a href="nav bar.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
+                <td><?php echo number_format($value["product_quantity"]*$value["product_price"],2);?></td>   
+                <td><a href="cart.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
             </tr>
 
             <?php
@@ -99,6 +98,6 @@
             }
             ?>
         </table>
-    </div>     
+    </div>   
 </body>
 </html>
