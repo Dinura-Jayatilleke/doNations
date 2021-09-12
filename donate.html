@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+	    <title>donate - doNation</title>
+	    <link rel="stylesheet" type="text/css" href="Donate/main.css">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://kit.fontawesome.com/9ba1f57a06.js"></script>
+        <title></title>
+        <link rel="stylesheet" href="main.css">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://kit.fontawesome.com/9ba1f57a06.js" crossorigin="anonymous"></script>
+    
+    </head>
+    <body style="background-color:rgb(154, 221, 241);"> 
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Donate/images/logo.png" ></a>
+                <div class="nav-links" Id="navLinks"> 
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.php">Products</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="About us.html">About</a></li>
+                        <li><a href="Contact us.html">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <i class="fa  fa-bars"  onclick="showMenu()"></i>
+            </nav>
+<!----------Page Name------->
+		    <h1>DONATE</h1>
+			
+	    </section>
+        <!------------JavaScript for Toggle Menu------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+         <!--------------donate ------------------>
+         <section class="donate">
+            <div class="stories">
+                <div class="container">
+                    <div class="section-titletext-center">
+                        <h3><u>Join Us To Eradicate Poverty</u></h3>
+                    </div>
+                    <div class="About">
+                        <p>Poverty is a state or condition in which a person or community lacks the financial resources and essentials for a minimum <br>standard of living.Poverty means that the income level from employment is so low that basic human needs can't be met. <br>Poverty-stricken people and families might go without proper housing, clean water, healthy food, and medical attention. </p>
+                    </div>
+                     <!----->
+                     <div class="row">
+                        
+                        <div class="story-box overlay shadow">
+                            <div class="story-icon">
+                                <i class="fas fa-ambulance"></i>
+                            </div>
+                            <h2>Health</h2>
+                            <p>
+                             Increasing access to Medicaid for families may be one way to reduce poverty. Research shows that Medicaid helps pull families out <br>of poverty by providing access to affordable health coverage and lowering out-of-pocket costs.</p>
+                        </div>
+                    </div>
+                    <!----->
+                    <div class="col-md-4">
+                    <div class="story-box overlay shadow">
+                        <div class="story-icon">
+                            <i class="fas fa-hand-holding-water"></i>
+                        </div>
+                        <h2>Clean Water</h2>
+                        <p>Globally, 785 million people lack access to clean drinking water. The impacts of water scarcity affect families and their communities.<br> Without clean, easily accessible water, they can become locked in poverty for generations.</p>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-5">
+                    <div class="story-box overlay shadow">
+                        <div class="story-icon">
+                            <i class="fas fa-capsules"></i>
+                        </div>
+                        <h2>Medical</h2>
+                        <p>Try to give much medical help you can to people in poverty. Poverty is both a cause and a consequence of poor health in the world .</p>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-5">
+                    <div class="story-box overlay shadow">
+                        <div class="story-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h2>Money</h2>
+                        <p>About 9.2% of the world, or 689 million people, live in extreme poverty on less than $1.90 a day, according to the World Bank.Globally, <br>one in nine people are hungry or undernourished. 2.37 billion people did not have access to enough safe and nutritious food in 2020.</p>
+                    </div>
+                </div>
+                <!----->
+                <div class="col-md-5">
+                    <div class="story-box overlay shadow">
+                        <div class="story-icon">
+                            <i class="fas fa-candy-corn"></i>
+                        </div>
+                        <h2>Foods</h2>
+                        <p>
+                            Current estimates are that nearly 690 million people are hungry , or 8.9 percent of the world population – up by 10 million people in <br>one year and by nearly 60 million in five years.</p>
+                    </div>
+                </div>
+                <!----->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------button------------>
+        
+    <section class="button">
+        <div class="container">
+            <div class="title">GIVE YOUR SUPPORT</div>
+            <form action="Donate/donate.php" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="name" placeholder="Enter your name " name="FullName" required > 
+                    </div>
+                    <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" placeholder="Enter your email "  name="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">phone number</span>
+                            <input type="text" placeholder="Enter your Phone number"  name="phonenumber" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">$ Amount</span>
+                            <input type="text" placeholder="Enter your Amount  "  name="Amount"required>
+                        </div>
+                        
+                </div>
+                <div class="amount-details">
+                    <input type="radio"name="amount"id="dot-1">
+                    <input type="radio"name="amount"id="dot-2">
+                    <input type="radio"name="amount"id="dot-3">
+                    <input type="radio"name="amount"id="dot-4">
+                    <div class= "or">
+                        <span class="amount-title">OR</span> 
+                    </div>
+                    <div class="syd">
+                    <span class="amount-title">Select Your Donation Amount:</span></div>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="amount">$10</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="amount">$20</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="amount">$50</span>
+                        </label>
+                        <label for="dot-4">
+                            <span class="dot four"></span>
+                            <span class="amount">$100</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button1">
+                    <a href="donate.php"><input type="submit" name="" value=" DONATE"></a>
+                </div>
+                
+                </div>
+            </form>
+        </div>
+        
+    </section>   
+     <!---donors Section-->
+        
+     <section class="donor">
+        <!-----<hr style="height:2px;width:1640px;color:gray;background-color:gray">---->
+           <div class="container">
+               <div class="donhead">
+                     <h2>OUR DONORS</h2>
+                 </div>
+                 <div class="para">
+                     <p>The people who donated the most in this month..</p>
+                 </div>
+                 <div class="row">
+                    <div class="donor-col">
+                        <img src="Donate/images/d1.jpg" alt=""style="width:320px;height:165px;"class="img-fluid">
+                        <div class="layer">
+                        <h3>MR.Liam</h3>
+                        </div>
+                    </div>
+                    <div class="donor-col">
+                        <img src="Donate/images/d2.jpg"alt=""style="width:320px;height:165px;"class="img-fluid"> 
+                        <div class="layer">
+                            <h3>MR.William</h3>
+                        </div>
+                    </div>
+                    <div class="donor-col">
+                        <img src="Donate/images/d3.jpg" alt=""style="width:320px;height:165px;"class="img-fluid">
+                        <div class="layer">
+                            </a><h3>MR.lucas</h3>
+                        </div>
+                    </div>
+                    <div class="donor-col">
+                        <img src="Donate/images/d4.jpg" alt=""style="width:320px;height:165px;"class="img-fluid">
+                        <div class="layer">
+                            </a><h3>MR.James</h3>
+                        </div>
+                    </div>
+                    <div class="donor-col">
+                        <img src="Donate/images/d5.jpg" alt=""style="width:320px;height:165px;"class="img-fluid">
+                        <div class="layer">
+                            </a><h3>MR.Robert</h3>
+                        </div>
+           </div> 
+        </div>
+    </section>
+     <!------footer------->
+     <footer>
+        <div>
+            <div style="display: flex;" class="container1">
+                <div class="blue sec1" style="width: 40%;/*background-color: blue;*/">
+                    <h1 style="color: white;">Join to Donate!<br></h1>
+                    <form action="Donate/footer.php" method="post">
+                        <table>
+                            <tr>																
+                                <td  class="em" style="padding: 0px 8px 0px 0px;">
+                                    <input type="email" name="email" placeholder="  Email *" class="form">
+                                </td>								
+                                <td   class="s"style="padding-right: 8px;">
+                                    <strong><input type="submit" name="submit" id="submit"></strong>
+                                </td>	
+                            </tr>
+                        </table>					
+                    </form>
+                </div>				
+                <div class=" green sec1">
+                    <h2 style="color: white;">CONNECT<br></h2>
+                    <div style="border:none;">
+                        <a href="https://www.instagram.com/donationgrp03?r=nametag" class="media-iconsa"><i class='fab fa-instagram'></i></a>
+                        <a href="https://twitter.com/Donatio66123075" class="media-iconsa"><i class='fab fa-twitter'></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="media-iconsa"><i class='fab fa-linkedin-in'></i></a>
+                        <a href="https://www.facebook.com/Donations-102087662222457" class="media-iconsa"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+        </div>			
+        <div class="container1">
+            <div class="sec Aboutus">
+                <div class="topic">About us</div>
+                <p class="p1">Donations is made in order to help reduce poverty in the world. So work with us to make a difference.</p>			
+                <div class="topic lowertopic">Contact us</div>
+                    <div class="email">
+                        <a href="mailto:donations.g03@gmail.com"><i id="i" class="fas fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;donations.g03@gmail.com</i></a>
+                    </div>
+                <div class="sec2">
+                    <a href=""><img src="Donate/images/logo.png" width="100" height="70"></a>
+                </div>
+            </div>
+            <div class="sec ourdetails">
+                <div class="topic" style="margin-left: 0px;">Our Details</div>
+                    <div><a href="index.html" class="ma">Home</a></div>
+                    <div><a href="product.php" class="ma">Products</a></div>
+                    <div><a href="events.html" class="ma">Events</a></div>
+                    <div><a href="About us.html" class="ma">About us</a></div>
+                    <div><a href="Contact us.html" class="ma">Contact us</a></div>
+                    <div><a href="donate.html" class="ma">Donate</a></div>
+            </div>
+            <div class="sec ourpartners">
+                <div class="topic">Our Partners</div>
+                    <div><a href="" class="ma">Aalya</a></div>
+                    <div><a href="" class="ma">eWorld</a></div>
+                    <div><a href="" class="ma">Collab</a></div>
+                    <div><a href="" class="ma">Felixa</a></div>
+                    <div><a href="" class="ma">Tomblyrive</a></div>
+                    <div><a href="" class="ma">Malarvi</a></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copyright &#169; 2021 <a href="#" class="ba">donations. </a> All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

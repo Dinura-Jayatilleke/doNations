@@ -2,7 +2,7 @@
 
 include_once 'donate.php';
 
-$conn =new mysqli("localhost","root","","donate");
+$conn =new mysqli("localhost","root","","donations");
 if(!$conn)
 {
 	die("connection failed".mysqli_connect_error());
