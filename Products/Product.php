@@ -50,7 +50,6 @@
 <!--css files-->
 <link rel="stylesheet" type="text/css" href="ProductStyles.css">
 
-
 <!--bootstrap-->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -61,11 +60,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>Shopping Cart</title>
-<style>
-.mySlides {
-  display:none;
-}
-</style>
 </head>
 <body>
 <!-------------------------------------Header---------------------------------------->
@@ -119,6 +113,70 @@
   ?>
 </div>
 
+<footer>
+    <div class="container">
+        <div class="blue sec1" style="width: 40%;">
+            <h1 style="color: white;">Join to Donate!<br></h1>
+            <form action="footer.php" method="post">
+                <input type="email" name="email" placeholder="  Email *" class="form">
+                <strong><input type="submit" name="submit" id="submit"></strong>
+            </form>
+        </div>
+        
+        <div class=" green sec1">
+            <h1 style="color: white;">CONNECT<br></h1>
+            <div style="border:none;">
+                <a href="https://www.instagram.com/donationgrp03?r=nametag" class="media-iconsa"><i class='fab fa-instagram'></i></a>
+                <a href="https://twitter.com/Donatio66123075" class="media-iconsa"><i class='fab fa-twitter'></i></a>
+                <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="media-iconsa"><i class='fab fa-linkedin-in'></i></a>
+                <a href="https://www.facebook.com/Donations-102087662222457" class="media-iconsa"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+    </div>
+ 
+    <div class="container">
+        <div class="sec Aboutus">
+            <div class="topic">About us</div>
+                <p class="p1">Donations is made in order to help reduce poverty in the world. So work with us to make a difference.</p>         
+            <div class="topic lowertopic">Contact us</div>
+
+            <div class="email">
+                <a href="mailto:donations.g03@gmail.com"><i id="i" class="fas fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;donations.g03@gmail.com</i></a>
+            </div>
+
+            <div class="sec2">
+                <a href="index.html"><img src="Images/logo.png" height="70px" width="140px"></a>
+            </div>
+        </div>
+        
+        <div class="sec ourdetails">
+            <div class="topic" style="margin-left: 0px;">Our Details</div>
+            <div><a href="index.html" class="ma">Home</a></div>
+            <div><a href="#" class="ma">Products</a></div>
+            <div><a href="#" class="ma">Donors</a></div>
+            <div><a href="About us.html" class="ma">About us</a></div>
+            <div><a href="Contact us.html" class="ma">Contact us</a></div>
+            <div><a href="#" class="ma">Donate</a></div>
+        </div>
+
+        <div class="sec ourpartners">
+            <div class="topic">Our Partners</div>
+            <div><a href="" class="ma">Aalya</a></div>
+            <div><a href="" class="ma">eWorld</a></div>
+            <div><a href="" class="ma">Collab</a></div>
+            <div><a href="" class="ma">Felixa</a></div>
+            <div><a href="" class="ma">Tomblyrive</a></div>
+            <div><a href="" class="ma">Malarvi</a></div>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+        <p>Copyright &#169; 2021 <a href="#" class="ba">donations. </a> All rights reserved</p>
+    </div>
+
+</footer>
 
 <script>
   //script for the header
@@ -146,8 +204,7 @@
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 2000); // Change image every 2 seconds
-}   
+} 
 </script>
-
 </body>
 </html>
