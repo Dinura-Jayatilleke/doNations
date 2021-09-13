@@ -189,8 +189,7 @@
     x.className = "topnav";
   }
 }
-</script>
-<script>
+
   //script for the image slide
   var myIndex = 0;
   carousel();
