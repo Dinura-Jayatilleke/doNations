@@ -1,196 +1,125 @@
 <?php
-  session_start();
-  include_once 'Products/connection.php';
-  
-  if(isset($_POST["add"])){
-    if(isset($_SESSION["shopping_cart"])){
-      $item_array_id = array_column($_SESSION["shopping_cart"],"product_id");
-        if(!in_array($_GET["id"],$item_array_id)){
-          $count = count($_SESSION["shopping_cart"]);
-          $item_array = array(
-           'product_id' => $_GET["id"],
-           'product_name' => $_POST["hidden_name"],
-           'product_price' => $_POST["hidden_price"],
-           'product_quantity' => $_POST["quantity"],
-            );
-            $_SESSION["shopping_cart"][$count] = $item_array;
-            echo '<script>window.location="cart.php"</script>';
-            }else{
-            echo '<script>alert("Product is already in  the cart")</script>';
-            echo '<script>window.location="cart.php"</script>';
+
+session_start();
+
+require_once ("Products/php/CreateDb.php");
+require_once ("Products/php/component.php");
+
+$db = new CreateDb("Productdb", "Producttb");
+
+if (isset($_POST['remove'])){
+  if ($_GET['action'] == 'remove'){
+      foreach ($_SESSION['cart'] as $key => $value){
+          if($value["product_id"] == $_GET['id']){
+              unset($_SESSION['cart'][$key]);
+              /*echo "<script>alert('Product has been Removed...!')</script>";
+              echo "<script>window.location = 'cart.php'</script>";*/
           }
-        }else{
-            $item_array = array(
-                'product_id' => $_GET["id"],
-                'product_name' => $_POST["hidden_name"],
-                'product_price' => $_POST["hidden_price"],
-                'product_quantity' => $_POST["quantity"],
-            );
-            $_SESSION["shopping_cart"][0] = $item_array;
-        }
-    }
-
-    if(isset($_GET["action"])){
-        if($_GET["action"] == "delete"){
-            foreach($_SESSION["shopping_cart"] as $keys => $value){
-                if($value["product_id"] == $_GET["id"]){
-                    unset($_SESSION["shopping_cart"][$keys]);
-                    echo '<script>alert("Product has been removed")</script>';
-                    echo '<script>window.location="cart.php"</script>';
-                }
-            }
-        }
-    }
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--css files-->
-    <link rel="stylesheet" type="text/css" href="Products/ProductStyles.css">
-
-    <!--bootstrap-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-    <!--font style-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-<div class="topnav" id="myTopnav">
-  <a href="index.html">Home</a>
-  <a href="Product.php">Products</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
-<h1 class="title">Cart</h1>
-<div class="table-responsive">
-    <table class="table table-bordered">
-        <tr>
-            <th width="50%">Product Name</th>
-            <th width="5%">Quantity</th>
-            <th width="15%">Price Details</th>
-            <th width="15%">Total Price</th>
-            <th width="15%">Remove Item</th>
-        </tr>
-
-        <?php
-        if(!empty($_SESSION["shopping_cart"])){
-            $total=0;
-        foreach($_SESSION["shopping_cart"] as $key => $value){
-        ?>
-            
-        <tr>
-            <td><?php echo $value["product_name"];?></td>
-            <td><?php echo $value["product_quantity"];?></td>
-            <td><?php echo $value["product_price"];?></td>
-            <td><?php echo number_format($value["product_quantity"]*$value["product_price"],2);?></td>   
-            <td><a href="cart.php?action=delete&id=<?php echo $value["product_id"]; ?>"><span class="text-danger">Remove Item</span></a></td>
-        </tr>
-
-        <?php
-        $total = $total + ($value["product_quantity"]*$value["product_price"]);
-            }
-        ?>
-
-        <tr>
-            <td colspan="3" align="right">Total</td>
-            <td align="right"><?php echo number_format($total,2);?></td>
-            <td></td>
-        </tr>
-              
-        <?php
-            }
-        ?>
-    </table>
-</div>
-
-    
-<footer>
-    <div class="container">
-        <div class="blue sec1" style="width: 40%;">
-            <h1 style="color: white;">Join to Donate!<br></h1>
-            <form action="footer.php" method="post">
-                <input type="email" name="email" placeholder="  Email *" class="form">
-                <strong><input type="submit" name="submit" id="submit"></strong>
-            </form>
-        </div>
-        
-        <div class=" green sec1">
-            <h1 style="color: white;">CONNECT<br></h1>
-            <div style="border:none;">
-                <a href="https://www.instagram.com/donationgrp03?r=nametag" class="media-iconsa"><i class='fab fa-instagram'></i></a>
-                <a href="https://twitter.com/Donatio66123075" class="media-iconsa"><i class='fab fa-twitter'></i></a>
-                <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" class="media-iconsa"><i class='fab fa-linkedin-in'></i></a>
-                <a href="https://www.facebook.com/Donations-102087662222457" class="media-iconsa"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-
-    </div>
- 
-    <div class="container">
-        <div class="sec Aboutus">
-            <div class="topic">About us</div>
-                <p class="p1">Donations is made in order to help reduce poverty in the world. So work with us to make a difference.</p>         
-            <div class="topic lowertopic">Contact us</div>
-
-            <div class="email">
-                <a href="mailto:donations.g03@gmail.com"><i id="i" class="fas fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;donations.g03@gmail.com</i></a>
-            </div>
-
-            <div class="sec2">
-                <a href="index.html"><img src="Products/Images/logo.png" height="70px" width="140px"></a>
-            </div>
-        </div>
-        
-        <div class="sec ourdetails">
-            <div class="topic" style="margin-left: 0px;">Our Details</div>
-            <div><a href="index.html" class="ma">Home</a></div>
-            <div><a href="product.php" class="ma">Products</a></div>
-            <div><a href="events.html" class="ma">Events</a></div>
-            <div><a href="About us.html" class="ma">About us</a></div>
-            <div><a href="Contact us.html" class="ma">Contact us</a></div>
-            <div><a href="donate.html" class="ma">Donate</a></div>
-        </div>
-
-        <div class="sec ourpartners">
-            <div class="topic">Our Partners</div>
-            <div><a href="" class="ma">Aalya</a></div>
-            <div><a href="" class="ma">eWorld</a></div>
-            <div><a href="" class="ma">Collab</a></div>
-            <div><a href="" class="ma">Felixa</a></div>
-            <div><a href="" class="ma">Tomblyrive</a></div>
-            <div><a href="" class="ma">Malarvi</a></div>
-        </div>
-
-    </div>
-
-    <div class="bottom">
-        <p>Copyright &#169; 2021 <a href="#" class="ba">donations. </a> All rights reserved</p>
-    </div>
-
-</footer>
-
-<script>
-  //script for the image slide
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+      }
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-} 
-</script>
-   
+}
+
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Products/Productstyles.css">
+</head>
+<body class="bg-light">
+
+<header id="header">
+    <nav class="navbar">
+        <a href="Product.php">
+            <h4 class="px-5">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Products
+            </h4>
+        </a>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row px-5">
+        <div class="col-md-7">
+            <div class="shopping-cart">
+                <h6>My Cart</h6>
+                <hr>
+
+                <?php
+
+                $total = 0;
+                    if (isset($_SESSION['cart'])){
+                        $product_id = array_column($_SESSION['cart'], 'product_id');
+
+                        $result = $db->getData();
+                        while ($row = mysqli_fetch_assoc($result)){
+                            foreach ($product_id as $id){
+                                if ($row['id'] == $id){
+                                    cartElement($row['product_image'], $row['product_name'],$row['product_price'], $row['id']);
+                                    $total = $total + (int)$row['product_price'];
+                                }
+                            }
+                        }
+                    }else{
+                        echo "<h5>Cart is Empty</h5>";
+                    }
+
+                ?>
+
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-1 border rounded mt-5 bg-white h-25">
+
+            <div class="pt-4">
+                <h6>PRICE DETAILS</h6>
+                <hr>
+                <div class="row price-details">
+                    <div class="col-md-6">
+                        <?php
+                            if (isset($_SESSION['cart'])){
+                                $count  = count($_SESSION['cart']);
+                                echo "<h6>Price ($count items)</h6>";
+                            }else{
+                                echo "<h6>Price (0 items)</h6>";
+                            }
+                        ?>
+                        <h6>Delivery Charges</h6>
+                        <hr>
+                        <h6>Amount Payable</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Rs.<?php echo $total; ?></h6>
+                        <h6 class="text-success">FREE</h6>
+                        <hr>
+                        <h6>Rs.<?php
+                            echo $total;
+                            ?></h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
