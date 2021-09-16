@@ -475,6 +475,10 @@ a:hover
 		color: #003355;
 		text-align: center;
 	}
+	.heading span
+	{
+		font-size: 30px;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
