@@ -5,10 +5,6 @@ session_start();
 require_once ('Products/php/connection.php');
 require_once ('Products/php/component.php');
 
-
-// create instance of Createdb class
-//$database = new CreateDb("Productdb", "Producttb");
-
 if (isset($_POST['add'])){
     /// print_r($_POST['product_id']);
     if(isset($_SESSION['cart'])){
