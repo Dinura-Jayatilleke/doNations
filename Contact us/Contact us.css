@@ -329,7 +329,7 @@ a:hover
 	}
 	#impact
 	{	
-	padding-left: 50px;
+	padding-left: 0px;
 	padding-right: 250px;
 	}
 	#im1
@@ -374,6 +374,22 @@ a:hover
 	height: auto;	
 	width: 100%; 
 	background-size:cover;
+	}
+	#im1
+	{
+	padding-left: 20px;
+	}
+	#impact2
+	{
+	padding-left: 0px;
+	}
+	.p3
+	{
+		text-align: center;
+	}
+	.styles1
+	{
+	margin-left:110px;
 	}
 }
 /*footer mobile view*/
