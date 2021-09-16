@@ -500,24 +500,23 @@ a:hover
 	{
 		flex-direction: column;
 		margin:20px 0;
-		margin-left: 110px;
 	}
 	.profile
 	{
-		margin:20px 10px 80px 10px;
+		margin:20px 10px 80px 80px;
 	}
 	.user-name
 	{
-		margin-left: -10px;
+		margin-left: -30px;
 	}
 	.h5
 	{
-		margin-left: -10px;
+		margin-left: -30px;
 	}
 	.p2
 	{
-		margin-left: -10px;
-		padding-right: 70px;
+		margin-left: -30px;
+		margin-right: 20px;
 	}
 }
 /*footer mobile view*/
