@@ -444,6 +444,10 @@ a:hover
 		height:500px;
 		width:100%;
 	}
+	.history
+	{
+		flex-direction: column;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
