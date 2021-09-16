@@ -468,6 +468,13 @@ a:hover
 	{
 		flex-direction: column;
 	}
+	.heading
+	{
+
+		font-size: 60px;
+		color: #003355;
+		text-align: center;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
