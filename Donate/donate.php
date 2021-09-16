@@ -2,7 +2,7 @@
 
 include_once 'donate.php';
 
-$conn =new mysqli("localhost","root","","donations");
+$conn =new mysqli("us-cdbr-east-04.cleardb.com","b9e4e2513341e1","d8e1a446","heroku_f8074740b1b3459");
 if(!$conn)
 {
 	die("connection failed".mysqli_connect_error());
