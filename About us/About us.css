@@ -384,50 +384,31 @@ a:hover
 /*body mobile view*/
 @media (max-width: 900px)
 {
-	#pov
+	.container3
 	{
-	height: auto;	
-	width: 100%; 
-	background-size:cover;
+		flex-direction: column;
 	}
-	#impact
-	{	
-	padding-left: 50px;
-	padding-right: 250px;
-	}
-	#im1
+	.history
 	{
-	padding-left: 20px;
-	height: 46px;
-	width: 150px;
-	background-color:none;
+		flex-direction: column;
+		height: 450px;width:550px;
 	}
-	#h2
+	.history12
 	{
-	font-size: 25px;
-	width:350px;
-	background-color: white;
-	color: black;
-	padding:10px 0px 10px 10px;
+		width:100%;
+		margin-bottom: -100px;
+        padding: 60px  40px  0px  0px ;
 	}
-	#im
+	.history4
 	{
-	height: 260px;
-	width: 400px;
-	background-color:#003355;
+		width:100%;
+		margin-top: -60px;
+		margin-top: -50px;
+        padding: 0px  40px  0px  50px ;
 	}
-	.p3
-	{
-	font-size:20px;
-	color: white;
-	font-family: arial;
-	padding-top: 25px;
-	}
-	.inside
-	{
-		margin-top:30px;
-		margin-left:110px;
-		width: 190px;
+	.laow
+	{ 
+	margin:30px -50px 0px -135px;
 	}
 }
 @media (max-width: 900px)
