@@ -436,6 +436,15 @@ a:hover
         padding: 0px  40px  0px  40px ;
 	}
 }
+@media (max-width: 900px)
+{
+	.container4
+	{
+		flex-direction: column;
+		height:500px;
+		width:100%;
+	}
+}
 /*footer mobile view*/
 @media (max-width: 800px)
 {
