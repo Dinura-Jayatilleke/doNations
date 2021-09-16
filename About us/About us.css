@@ -455,6 +455,12 @@ a:hover
 		/*background-color: red;*/
 		margin-bottom: 60px;
 	}
+	.new
+	{
+		margin-left: -240px;
+		margin-right: -220px;
+		padding: 0px -30px 30px -20px;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
