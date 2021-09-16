@@ -428,6 +428,13 @@ a:hover
 		margin-bottom: 0px;
         padding: 90px  40px  0px  60px ;
 	}
+	.history2
+	{
+		width:100%;
+		margin-top: -150px;
+		margin-left: -50px;
+        padding: 0px  40px  0px  40px ;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
