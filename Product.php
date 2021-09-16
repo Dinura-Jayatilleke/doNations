@@ -6,7 +6,6 @@ require_once ('Products/php/connection.php');
 require_once ('Products/php/component.php');
 
 if (isset($_POST['add'])){
-    /// print_r($_POST['product_id']);
     if(isset($_SESSION['cart'])){
 
         $item_array_id = array_column($_SESSION['cart'], "product_id");
@@ -32,7 +31,6 @@ if (isset($_POST['add'])){
 
         // Create new session variable
         $_SESSION['cart'][0] = $item_array;
-        //print_r($_SESSION['cart']);
     }
 }
 
