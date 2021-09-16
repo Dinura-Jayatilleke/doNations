@@ -1,8 +1,8 @@
 <?php
-	$server= "localhost";
-	$username= "root";
-	$password= "";
-	$dbname= "donations";
+	$server= "us-cdbr-east-04.cleardb.com";
+	$username= "b9e4e2513341e1";
+	$password= "d8e1a446";
+	$dbname= "heroku_f8074740b1b3459";
 	
 	$con= mysqli_connect($server, $username, $password, $dbname);
 	
