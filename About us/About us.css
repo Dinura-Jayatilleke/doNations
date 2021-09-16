@@ -417,6 +417,11 @@ a:hover
 	{
 		flex-direction: column;
 	}
+	.history
+	{
+		flex-direction: column;
+		height: 290px;width:100%;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
