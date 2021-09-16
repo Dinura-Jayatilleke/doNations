@@ -407,12 +407,7 @@ a:hover
 		margin-left: 25px;
 
 	}
-	.historypara
-	{
-		margin-left: 80px;
-		margin-right: 110px;
-		padding: 25px  0px 140px  0px ;
-	}
+	
 }
 /*footer mobile view*/
 @media (max-width: 800px)
