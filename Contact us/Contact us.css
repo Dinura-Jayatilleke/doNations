@@ -392,6 +392,13 @@ a:hover
 	margin-left:110px;
 	}
 }
+@media (max-width: 900px)
+{
+	.container3
+	{
+		flex-direction: column;
+	}
+}
 /*footer mobile view*/
 @media (max-width: 800px)
 {
