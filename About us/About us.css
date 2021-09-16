@@ -423,6 +423,11 @@ a:hover
 	{
 	padding-left: 0px;
 	}
+	#im
+	{
+	width: 400px;
+	height: 320px;
+	}
 }
 @media (max-width: 900px)
 {
