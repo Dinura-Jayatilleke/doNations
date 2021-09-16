@@ -422,6 +422,12 @@ a:hover
 		flex-direction: column;
 		height: 290px;width:100%;
 	}
+	.history12
+	{
+		margin-right: 0px;
+		margin-bottom: 0px;
+        padding: 90px  40px  0px  60px ;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
