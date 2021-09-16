@@ -481,6 +481,8 @@ a:hover
 	.profiles
 	{
 		flex-direction: column;
+		margin:20px 0;
+		margin-left: 110px;
 	}
 }
 /*footer mobile view*/
