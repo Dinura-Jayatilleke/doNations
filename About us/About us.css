@@ -419,6 +419,10 @@ a:hover
 	width: 100%; 
 	background-size:cover;
 	}
+	#impact
+	{
+	padding-left: 0px;
+	}
 }
 @media (max-width: 900px)
 {
