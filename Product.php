@@ -118,9 +118,13 @@ if (isset($_POST['add'])){
 <div class="Pcontainer">
         <div class="row text-center py-5">
             <?php
-                $result = $database->getData();
-                while ($row = mysqli_fetch_assoc($result)){
-                    component($row['product_name'], $row['product_image'], $row['product_dis'], $row['product_price'], $row['id']);
+                $sql = "select * from Producttb";
+                $result = mysqli_query($con,$sql);
+                if(mysqli_num_rows($result)>0){
+                    while ($row = mysqli_fetch_assoc($result))
+                    {
+                        component($row['product_name'], $row['product_image'], $row['product_dis'], $row['product_price'], $row['id']);
+                    }
                 }
             ?>
         </div>
