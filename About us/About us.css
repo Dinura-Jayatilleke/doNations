@@ -413,6 +413,15 @@ a:hover
 }
 @media (max-width: 900px)
 {
+	#wm
+	{
+	height: auto;	
+	width: 100%; 
+	background-size:cover;
+	}
+}
+@media (max-width: 900px)
+{
 	.container2
 	{
 		flex-direction: column;
