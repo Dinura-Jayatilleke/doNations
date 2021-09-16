@@ -484,6 +484,10 @@ a:hover
 		margin:20px 0;
 		margin-left: 110px;
 	}
+	.profile
+	{
+		margin:20px 10px 80px 10px;
+	}
 }
 /*footer mobile view*/
 @media (max-width: 800px)
