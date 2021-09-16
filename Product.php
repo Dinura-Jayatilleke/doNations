@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once ('Products/php/CreateDb.php');
+require_once ('Products/php/connection.php');
 require_once ('Products/php/component.php');
 
 
