@@ -413,11 +413,9 @@ a:hover
 }
 @media (max-width: 900px)
 {
-	#sb
+	.container2
 	{
-	height: auto;	
-	width: 100%; 
-	background-size:cover;
+		flex-direction: column;
 	}
 }
 /*footer mobile view*/
